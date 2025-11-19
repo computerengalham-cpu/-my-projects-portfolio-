@@ -15,4 +15,4 @@ A collection of my projects and learning journey
 - :white_check_mark: Git & GitHub fundamentals 
 - :white_check_mark: Software Development Life Cycle 
 - :white_check_mark: Web Development basics 
-- :arrows_counterclockwise: Currently learning: [Your current focus] 
+- :arrows_counterclockwise: Currently learning: [  Full-stack web development ] 
