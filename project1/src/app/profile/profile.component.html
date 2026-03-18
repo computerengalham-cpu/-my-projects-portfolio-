@@ -1,0 +1,19 @@
+<div class="text-center mt-4 ">
+<p *ngIf="isLoggedIn">welcome back, {{name}}!</p>
+<p *ngIf="!isLoggedIn">Please log in.</p>
+
+<button class="btn btn-info rounded-pill px-4 " (click)="toggleLogin()">Toggle login</button>
+<br><br>
+<h3>My Skills</h3>
+<ul class="list-group d-inline-block text-start">
+    <li *ngFor="let skill of skills; let i=index">
+        {{i+1}}. {{skill}}
+    </li>
+</ul>
+
+<div [ngSwitch]="userRole">
+    <p *ngSwitchCase="'admin'"> Admin Panel</p>
+    <p *ngSwitchCase="'editor'"> Editor Panel</p>
+    <p *ngSwitchCase="'view'"> View Only</p>
+    <p *ngSwitchDefault>Unknown Role</p>
+</div></div>
